@@ -43,10 +43,10 @@ const getStatus = (workoutHistory) => {
     return wDate.getMonth() === currentMonth && wDate.getFullYear() === currentYear;
   }).length;
   
-  if (monthWorkouts === 0) return 'что-то подсдулся';
-  if (monthWorkouts <= 4) return 'не скуфирован';
+  if (monthWorkouts === 0) return 'пока без тренек';
+  if (monthWorkouts <= 4) return 'не скуфирован, ура';
   if (monthWorkouts <= 10) return 'машинка';
-  return 'шоу титаны';
+  return 'победитель шоу титаны';
 };
 
 export default function VesaApp() {
