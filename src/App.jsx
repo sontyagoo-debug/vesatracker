@@ -43,7 +43,7 @@ const getStatus = (workoutHistory) => {
     return wDate.getMonth() === currentMonth && wDate.getFullYear() === currentYear;
   }).length;
   
-  if (monthWorkouts === 0) return 'отставить сдутие!';
+  if (monthWorkouts === 0) return 'что-то подсдулся';
   if (monthWorkouts <= 4) return 'не скуфирован';
   if (monthWorkouts <= 10) return 'машинка';
   return 'шоу титаны';
@@ -394,7 +394,7 @@ export default function VesaApp() {
               <div className="text-gray-600 text-sm lowercase">тренировок</div>
             </div>
             <div className="bg-gradient-to-br from-lime-400 to-green-400 rounded-2xl p-5 shadow-md">
-              <div className="text-sm text-gray-700 mb-1 lowercase">сегодня ты..</div>
+              <div className="text-sm text-gray-700 mb-1 lowercase">в этом месяце ты..</div>
               <div className="text-lg font-black text-gray-800 leading-tight lowercase">{currentStatus}</div>
             </div>
           </div>
